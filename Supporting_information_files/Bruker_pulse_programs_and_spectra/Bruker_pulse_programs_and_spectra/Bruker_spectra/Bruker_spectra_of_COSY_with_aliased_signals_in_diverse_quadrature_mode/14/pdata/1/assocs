@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TOPSPIN		Version 2.1
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2019-01-22 11:52:26.656 +0100  nmr@nmrge300b
+$$ /opt/topspin2.1pl8/data/sistare/data/nmr/nmr/esg_Damien_Soft-TPPI/14/pdata/1/assocs
+$$ process /opt/topspin2.1pl8/prog/mod/dataserver
+##$MULTDISP= </opt/topspin2.1pl8/data/sistare/data/nmr/nmr/esg_Beta-TPPI/12/pdata/1>
+##END=

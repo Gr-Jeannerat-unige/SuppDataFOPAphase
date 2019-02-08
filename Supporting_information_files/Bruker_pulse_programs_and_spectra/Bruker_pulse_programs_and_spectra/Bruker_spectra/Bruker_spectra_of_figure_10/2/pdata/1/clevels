@@ -1,0 +1,28 @@
+##TITLE= Parameter file, TOPSPIN		Version 2.1
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 8	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ 2019-01-21 19:15:53.037 +0100  nmr@nmrge300b
+$$ /opt/topspin2.1pl8/data/sistare/data/nmr/nmr/esg_Damien_Soft-TPPI/2/pdata/1/clevels
+$$ process /opt/topspin2.1pl8/prog/mod/dataserver
+##$LEVELS= (0..255)
+-53940258.139392 -29966810.07744 -16648227.8208 -9249015.456 -5138341.92
+-2854634.4 -1585908 -881060 881060 1585908 2854634.4 5138341.92 9249015.456
+16648227.8208 29966810.07744 53940258.139392 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0
+##$LEVSIGN= 3
+##$MAXLEV= 8
+##$METHOD= 0
+##$NEGBASE= -881060
+##$NEGINCR= 1.8
+##$POSBASE= 881060
+##$POSINCR= 1.8
+##END=

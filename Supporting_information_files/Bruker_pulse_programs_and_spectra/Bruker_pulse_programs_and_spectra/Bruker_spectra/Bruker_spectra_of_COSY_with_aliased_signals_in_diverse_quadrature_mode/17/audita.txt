@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin2.1pl8/data/sistare/data/nmr/nmr/esg_Damien_Soft-TPPI/17/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2019-01-22 15:46:02.150 +0100>,<nmr>,<nmrge300b>,<go>,<TOPSPIN 2.1>,
+      <created by zg
+	started at 2019-01-22 15:29:33.525 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       E7 34 71 AF D6 37 BA 47 56 E7 E5 D2 37 42 6B ED
+       data hash MD5: 4K * 128
+       BA A4 D5 14 BF E7 A7 08 19 1B CA 10 DD 91 BB D0>)
+##END=
+
+$$ hash MD5
+$$ 4D 22 50 D6 35 0E F3 7B CA 63 9E 56 A2 57 FD 9E

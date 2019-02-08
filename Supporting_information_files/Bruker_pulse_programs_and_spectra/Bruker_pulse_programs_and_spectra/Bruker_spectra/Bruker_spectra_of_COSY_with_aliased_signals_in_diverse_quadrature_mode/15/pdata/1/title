@@ -1,0 +1,10 @@
+FnMODE States
+SW=10ppm
+o2p=5ppm
+cnst21=8.15ppm
+
+Phase calc. to ref. (ph1 - ph2) - NEW PHASE INCREMENTATION (additional phase pulse calculation and sum - Restore quadrature)
+Phase ref. to calc. (ph2 - ph4/ph3/ph5) - OLD PHASE INCREMENTATION
+- PH31 is incremented using ph30 NEW PHASE INCREMENTATION (additional phase pulse calculation and sum - Restore quadrature)
+
+Pulses that require quadrature incrementation use NEW phase incrementation. Normal pulses just use OLD phase incrementation.

@@ -1,0 +1,15 @@
+Cyclopropane CDCl3
+SW 200ppm
+o2p 75ppm
+cnst21=45
+
+Phase calc. to ref. (ph3 - ph7) - NEW PHASE INCREMENTATION (additional phase pulse calculation and sum - Restore quadrature)
+Phase ref. to calc. (ph7 - ph4) - OLD PHASE INCREMENTATION
+
+INEPT and RETRO-INEPT 180-13C are not modified
+
+Pulses that require quadrature incrementation use NEW phase incrementation. Normal pulses just use OLD phase incrementation.
+
+TRIAL USING IP9 FOR A NEW PHASE INCREMENTATION AND THEN USING IT AGAING FOR AN OLD PHASE INCREMENTATION (not cycled for quadrature/incrementation)
+
+Acquired using "hsqcetgpsp_BTPPI_ip9X.ea.esg"

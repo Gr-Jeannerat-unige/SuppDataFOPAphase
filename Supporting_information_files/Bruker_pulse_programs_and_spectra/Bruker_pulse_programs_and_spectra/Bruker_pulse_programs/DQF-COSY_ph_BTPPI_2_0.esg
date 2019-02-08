@@ -1,0 +1,113 @@
+;from cosygpmfph_test2.esg (working pulse program with phase incrementation problem)
+;cosygpmfph
+;avance-version (07/04/04)
+;2D homonuclear shift correlation
+;phase sensitive
+;using gradient pulses for selection
+;with multiple quantum filter according to gradient ratio
+;use pulseprogram 'mqsgp1d' for setup
+
+;Phase calculation from calc. to ref. (ph2) - ref. (ph2) to calc. phase 
+
+;
+;$CLASS=HighRes
+;$DIM=2D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+#include <Avance.incl>
+#include <Delay.incl>
+#include <Grad.incl>
+
+
+"p2=p1*2"
+"d13=4u"
+"in0=inf1"
+"d0=in0/2-p1*4/3.1416"
+"cnst22=o1/bf1"
+"cnst23=(cnst22-cnst21)*bf1" ;ref. to calc.
+"cnst24=(-cnst22+cnst21)*bf1" ;calc. to ref.
+"DELTA=p16+d16+d13"
+
+
+1 ze
+2 d1
+3 
+"cnst29 = 360*cnst24*(d0 + 0.000001*(p1/2 + p1/2))" ;Phase calculation using SOFT TPPI
+"cnst30 = 360*cnst23*(d13 + d16 + 0.000001*(p1/2 + p16 + p2/2))" ;Phase calculation using SOFT TPPI
+"cnst31 = 360*cnst23*(2*d13 + 2*d16 + 0.000001*(p1/2 + p16 + p2 + p16 + p1/2))" ;Phase calculation using SOFT TPPI
+"cnst32 = 360*cnst23*(3*d13 + 3*d16 + 0.000001*(p1/2 + p16 + p2 + p16 + p1 + p16 + p2/2))" ;Phase calculation using SOFT TPPI
+"cnst33 = 360*cnst23*(4*d13 + 4*d16 + 0.000001*(p1/2 + p16 + p2 + p16 + p1 + p16 + p2 + p16))" ;Phase calculation using SOFT TPPI
+
+  4u ip6+cnst29
+  p1 ph1+ph6
+  d0
+  p1 ph2 ;REFERENCE PULSE PHASE
+  DELTA*0.5 UNBLKGRAD
+  DELTA*0.5 ip4+cnst30;ip6+cnst30
+  p2 ph4;+ph6
+  d13
+  p16:gp1
+  d16 ip3+cnst31;ip6+cnst31
+  p1 ph3;+ph6
+  DELTA ip5+cnst32;ip6+cnst32
+  p2 ph5;+ph6
+  d13
+  p16:gp2
+  d16 ip30+cnst33
+  4u BLKGRAD
+  go=2 ph31 ph30:r
+  d1 mc #0 to 2 F1PH(ip1, id0)
+exit
+
+
+ph1=1 3
+ph2=0 
+ph3=1 
+ph4=0
+ph5=0
+ph6=0 ;incrementation phase for ph1
+ph30=0 ;incrementation phase for ph31
+ph31=0 2
+
+
+;pl1 : f1 channel - power level for pulse (default)
+;p1 : f1 channel -  90 degree high power pulse
+;p2 : f1 channel - 180 degree high power pulse
+;p16: homospoil/gradient pulse
+;d0 : incremented delay (2D)
+;d1 : relaxation delay; 1-5 * T1
+;d13: short delay                                    [4 usec]
+;d16: delay for homospoil/gradient recovery
+;inf1: 1/SW = 2 * DW
+;in0: 1/(1 * SW) = 2 * DW
+;nd0: 1
+;NS: 1 * n
+;DS: 16
+;td1: number of experiments
+;FnMODE: States-TPPI, TPPI, States or QSEQ
+
+;use gradient ratio:	gp 1 : gp 2
+;			  10 :   20   for double quantum filter
+;			  10 :   30   for triple quantum filter
+
+;for z-only gradients:
+;gpz1: 10%
+;gpz2: 20% for DQF, 30% for TQF
+
+;use gradient files:   
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+
+
+;Processing
+
+;PHC0(F1): 90
+;PHC1(F1): -180
+;FCOR(F1): 1
+
+
+
+;$Id: cosygpmfph,v 1.9 2007/04/11 13:34:29 ber Exp $

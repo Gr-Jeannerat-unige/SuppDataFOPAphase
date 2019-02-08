@@ -1,0 +1,17 @@
+##TITLE= Parameter file, TopSpin 4.0.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= esistare
+$$ 2019-01-22 11:35:26.853 +0100  esistare@djmini7.local
+$$ /Users/esistare/Desktop/NMR/sistare/nmr/NMR300b/esg_Damien_Soft-TPPI/3/pdata/1/curdat2
+$$ process /opt/topspin4.0.2/prog/mod/dataserver
+##$DATPATH2= </Users/esistare/Desktop/NMR/sistare/nmr/NMR300b>
+##$DU2= <>
+##$EXPNO2= 1
+##$NAME2= <esg_Damien_Soft-TPPI>
+##$PROCNO2= 1
+##$TYPE= <>
+##$USER2= <>
+##END=

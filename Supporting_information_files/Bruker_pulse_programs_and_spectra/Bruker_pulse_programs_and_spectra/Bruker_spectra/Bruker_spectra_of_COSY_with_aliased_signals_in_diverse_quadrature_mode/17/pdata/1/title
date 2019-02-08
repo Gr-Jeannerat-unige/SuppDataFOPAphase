@@ -1,0 +1,15 @@
+FnMODE Echo-Antiecho
+SW=10ppm
+o2p=5ppm
+cnst21=8.15ppm
+
+Phase calc. to ref. (ph1/ph2 - ph3) - NEW PHASE INCREMENTATION (additional phase pulse calculation and sum - Restore quadrature)
+- PH2 is done with OLD PHASE INCREMENTATION
+Phase ref. to calc. (ph3 - ph4/ph5/ph6) - OLD PHASE INCREMENTATION
+- PH31 is incremented using ph30 NEW PHASE INCREMENTATION (additional phase pulse calculation and sum - Restore quadrature)
+
+Pulses that require quadrature incrementation use NEW phase incrementation. Normal pulses just use OLD phase incrementation.
+
+Phase error in F2 due to different value of VCF - ph31 IS ALSO MODIFIED!!!!! (TRY TO SUPPRESS THE PHASE ERROR)
+
+Still Phase error aroun -60degree (constant???)

@@ -1,0 +1,42 @@
+##TITLE= Audit trail, TOPSPIN		Version 2.1
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ /opt/topspin2.1pl8/data/sistare/data/nmr/nmr/esg_Damien_Soft-TPPI/3/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2019-01-21 21:24:59.249 +0100>,<nmr>,<nmrge300b>,<go>,<TOPSPIN 2.1>,
+      <created by zg
+	started at 2019-01-21 20:55:45.264 +0100,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       E7 34 71 AF D6 37 BA 47 56 E7 E5 D2 37 42 6B ED
+       data hash MD5: 2K * 256
+       DD E2 F7 C3 2D 3A 31 8A BD D4 10 9A 89 5B E8 31>)
+(   2,<2019-01-22 10:48:29.886 +0100>,<nmr>,<nmrge300b>,<proc2d>,<TOPSPIN 2.1>,
+      <Start of raw data processing
+       xfb F2: SI = 4K WDW = 4 SSB = 2 FT_mod = 6 PKNL = 1 PHC0 = 108.549 PHC1 = 13.6 F1: SI = 512 ME_mod = 2 NCOEF = 32 WDW = 4 SSB = 2 FT_mod = 6 PHC0 = 0 PHC1 = 0
+       data hash MD5: 4K * 512
+       36 40 E0 B0 49 E4 0F E2 82 FA 82 0E 34 03 BE 0B>)
+(   3,<2019-01-22 10:55:25.229 +0100>,<nmr>,<nmrge300b>,<audit>,<TOPSPIN 2.1>,
+      <user comment:
+       TITLE=Cyclopropane CDCl3
+       SW 200ppm
+       o2p 75ppm
+       cnst21=45
+       
+       Phase calc. to ref. (ph3 - ph7) - NEW PHASE INCREMENTATION (additional phase pulse calculation and sum - Restore quadrature)
+       Phase ref. to calc. (ph7 - ph4) - OLD PHASE INCREMENTATION
+       
+       INEPT and RETRO-INEPT 180-13C are not modified
+       
+       Pulses that require quadrature incrementation use NEW phase incrementation. Normal pulses just use OLD phase incrementation.
+       
+       TRIAL USING IP9 FOR A NEW PHASE INCREMENTATION AND THEN USING IT AGAING FOR AN OLD PHASE INCREMENTATION (not cycled for quadrature/incrementation)
+       
+       Acquired using "hsqcetgpsp_BTPPI_ip9X.ea.esg"TITLE_END
+       data hash MD5: 4K * 512
+       36 40 E0 B0 49 E4 0F E2 82 FA 82 0E 34 03 BE 0B>)
+##END=
+
+$$ hash MD5
+$$ F9 F9 82 66 33 9E A5 04 75 62 CC DD 91 2E 2A A3
